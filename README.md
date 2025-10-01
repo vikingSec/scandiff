@@ -88,10 +88,14 @@ This ran entirely agentically, generated tests, deployed using docker on my Macb
 The things it did not do properly that I fixed manually:
 - it did not generate a route to view an individual snapshot without "diff-ing" it with another one. I added that on my own. I think this is an important part of the UI/UX even if it wasn't listed in the requirements
 - it did not cover some test cases. specifically, it did not cover things like verification of host IP's for IPv4 or IPv6. I wrote a simple IPv4 regular expression on the backend and let Gemini create an IPv6 regular expression for me. it also did not cover the possibility of a user putting the diff ID's in the wrong order:
+
 `curl http://localhost:8080/api/diff/2/6`
+
 this is fine, as diff 2 is older than diff 6
 `curl http://localhost:8080/api/diff/6/2`
+
 this is not, as diff 6 is newer than diff 2
+
 I fixed this as well by verifying the ordering on the backend.
 - the documentation that it produced was extremely verbose. This is probably better than it being very sparse, but I had to go through and remove several sections that were wordy and unnecessary.
 - the typing on the backend tests was incomplete. I found that the tests made frequent use of Golang's `interface{}` syntax instead of making use of the `models` files that defined the typing for the backend. I believe that tests should serve as both a way of testing assumptions about the API and a form of documentation themselves, so I changed the tests to make them use the data model that the API uses.
