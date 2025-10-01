@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-09-20T12:00:00Z",
+  "ip": "125.199.235.74",
+  "services": [
+    {
+      "port": 443,
+      "protocol": "HTTPS",
+      "status": 200,
+      "software": {
+        "vendor": "microsoft",
+        "product": "internet_information_services",
+        "version": "10.0"
+      },
+      "tls": {
+        "version": "tlsv1_3",
+        "cipher": "TLS_AES_256_GCM_SHA384",
+        "cert_fingerprint_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+      }
+    }
+  ],
+  "service_count": 1
+}

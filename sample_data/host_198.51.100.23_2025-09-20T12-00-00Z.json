@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-09-20T12:00:00Z",
+  "ip": "198.51.100.23",
+  "services": [
+    {
+      "port": 22,
+      "protocol": "SSH",
+      "software": {
+        "vendor": "openssh",
+        "product": "openssh",
+        "version": "9.7p1"
+      }
+    },
+    {
+      "port": 80,
+      "protocol": "HTTP",
+      "status": 200,
+      "software": {
+        "vendor": "nginx",
+        "product": "nginx",
+        "version": "1.24.0"
+      }
+    },
+    {
+      "port": 443,
+      "protocol": "HTTPS",
+      "status": 200,
+      "software": {
+        "vendor": "apache",
+        "product": "httpd",
+        "version": "2.4.62"
+      },
+      "tls": {
+        "version": "tlsv1_2",
+        "cipher": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "cert_fingerprint_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    }
+  ],
+  "service_count": 3
+}

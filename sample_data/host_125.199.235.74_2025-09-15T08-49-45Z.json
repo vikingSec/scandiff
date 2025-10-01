@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-09-15T08:49:45Z",
+  "ip": "125.199.235.74",
+  "services": [
+    {
+      "port": 80,
+      "protocol": "HTTP",
+      "status": 301,
+      "software": {
+        "vendor": "microsoft",
+        "product": "internet_information_services",
+        "version": "8.5"
+      }
+    },
+    {
+      "port": 443,
+      "protocol": "HTTPS",
+      "status": 200,
+      "software": {
+        "vendor": "microsoft",
+        "product": "asp.net"
+      },
+      "tls": {
+        "version": "tlsv1_2",
+        "cipher": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "cert_fingerprint_sha256": "8e2f33d95cacbda559f4d4c65a0c4ea774735720130aac88efcd0c599ab452b9"
+      },
+      "vulnerabilities": ["CVE-2023-99999"]
+    }
+  ],
+  "service_count": 2
+}

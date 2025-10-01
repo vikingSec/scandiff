@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-09-10T03:00:00Z",
+  "ip": "125.199.235.74",
+  "services": [
+    {
+      "port": 80,
+      "protocol": "HTTP",
+      "status": 200,
+      "software": {
+        "vendor": "microsoft",
+        "product": "internet_information_services",
+        "version": "8.5"
+      }
+    }
+  ],
+  "service_count": 1
+}

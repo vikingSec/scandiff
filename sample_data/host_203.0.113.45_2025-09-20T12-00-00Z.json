@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-09-20T12:00:00Z",
+  "ip": "203.0.113.45",
+  "services": [
+    {
+      "port": 22,
+      "protocol": "SSH",
+      "software": {
+        "vendor": "openssh",
+        "product": "openssh",
+        "version": "8.2p1"
+      },
+      "vulnerabilities": ["CVE-2023-99992"]
+    },
+    {
+      "port": 80,
+      "protocol": "HTTP",
+      "status": 200,
+      "software": {
+        "vendor": "nginx",
+        "product": "nginx",
+        "version": "1.22.1"
+      },
+      "vulnerabilities": []
+    },
+    {
+      "port": 443,
+      "protocol": "HTTPS",
+      "status": 200,
+      "software": {
+        "vendor": "apache",
+        "product": "httpd",
+        "version": "2.4.57"
+      },
+      "tls": {
+        "version": "tlsv1_2",
+        "cipher": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "cert_fingerprint_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "vulnerabilities": ["CVE-2023-44446", "CVE-2021-99994"]
+    }
+  ],
+  "service_count": 3
+}
