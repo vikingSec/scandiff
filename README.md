@@ -21,7 +21,7 @@ I used claude-4.5 for the first time on this project and was extremely impressed
 "One-shot" prompt
 ```
 I am building a project with the following general description:
-```
+
 Project Description
 In security and network monitoring, understanding change over time is critical. A port that was closed yesterday might be open today; a new vulnerability might appear on a service that was previously considered safe.
 
@@ -68,7 +68,8 @@ Services being added, removed, or updated.
 Vulnerabilities (CVEs) appearing or being remediated.
 Software versions changing.
 You can use these files to test your solution by uploading them, browsing snapshot history, and generating diffs.
-```
+
+
 you can find sample data in the ./sample_data folder.
 
 Please generate the project with the following additional criteria:
